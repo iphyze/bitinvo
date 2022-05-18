@@ -1,0 +1,211 @@
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: Raleway-Bold;
+    src: url(fonts/Raleway/Raleway-Bold.ttf);
+}
+@font-face{
+    font-family: Raleway-Regular;
+    src: url(fonts/Raleway/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family: PlayfairDisplay-Regular;
+    src: url(fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+@font-face{
+    font-family: Ballerick;
+    src: url(fonts/Ballerick/Ballerick.otf);
+}
+*{
+    font-family: Raleway-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: #424e5a;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.landing-page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: white;
+}
+.landing-page-content{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow: auto;
+}
+.landing-page-container{
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.landing-page-note{
+    position: relative;
+    color: rgba(81, 175, 81, 1);
+    font-size: 50px;
+    margin: 40px auto;
+    font-family: Raleway-Bold;
+    text-transform: uppercase;
+}
+.survey-link{
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    font-family: Raleway-Bold;
+    background-color: rgba(81, 175, 81, 1);
+    color: white;
+}
+.survey-link:hover{
+    background-color: white;
+    color: #0f9a0f;
+    box-shadow: 0px 5px 20px -5px rgba(81, 175, 81, 1);
+    transition: all 0.5s ease-in-out;
+}
+.moving-ball{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(to bottom, rgba(81, 175, 81, 0.1), rgba(81, 175, 81, 0.3));
+    top: 10%;
+    left: 20%;
+    animation: move 10s ease-in-out infinite alternate; 
+}
+
+@keyframes move{
+    20%{
+        transform: translateY(30px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    75%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(-30px);
+    }
+}
+.moving-ball2{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(81, 175, 81, 0.3);
+    bottom: 10%;
+    right: 20%;
+    animation: move2 10s ease-in-out infinite alternate; 
+}
+
+@keyframes move2{
+    20%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    75%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}
+.round-ball{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+    background-image: linear-gradient(to left, rgba(81, 175, 81, 0.3), rgba(81, 175, 81, 0.1));
+    top: 30%;
+    left: 20%;
+    animation: move2 10s ease-in-out infinite alternate; 
+}
+
+@keyframes move2{
+    20%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    75%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}
+.round-ball2{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+    background-image: linear-gradient(to right, rgba(81, 175, 81, 0.5), rgba(81, 175, 81, 0.1));
+    top: 30%;
+    right: 20%;
+    animation: round 5s ease-in-out infinite alternate; 
+}
+
+.round-ball3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 200px;
+    background-color: white;
+    top: 25%;
+    right: 18%;
+    animation: move 5s ease-in-out infinite alternate; 
+}
+.round-ball4{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 200px;
+    background-image: linear-gradient(to right, rgba(81, 175, 81, 0.5), rgba(81, 175, 81, 0.1));
+    top: 25%;
+    right: 23%;
+    animation: move2 5s ease-in-out infinite alternate; 
+}
+
+@keyframes round{
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+
+
+@media screen and (max-width: 720px){
+.landing-page-container{
+    width: 95%;
+}
+.landing-page-note{
+    font-size: 30px;
+}
+}    

@@ -1,0 +1,628 @@
+@media screen and (max-width: 720px){
+.whole-container{
+    width: 100%;
+    position: relative;
+}
+.container-flex-box{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.col{
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+}
+.container-flex-box .menu{
+    width: 100%;
+    background-color: #080824;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+.container-flex-box .overview{
+    width: 100%;
+    background-color: #fcfcfc;
+    min-height: auto;
+}
+.logo-container{
+    width: 100%;
+    position: relative;
+    padding: 20px 10px;
+    color: white;
+    font-family: Raleway-Bold;
+    font-size: 20px;
+    background-color: #04043b;
+}
+.menu-container{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+.overview-header{
+    position: fixed;
+    width: 100%;
+    padding: 0px 10px;
+}
+.ovh-col{
+    width: 50%;
+    height: 100%;
+}
+.ovh-col-1{
+	width: 60%;
+}
+.ovh-col-2{
+	width: 39%;
+}
+.not-box{
+    margin-right: 10px;
+}
+.not-box .menu-display-icon{
+    color: #111;
+    font-size: 16px;
+    margin: 0px 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+.menu-close-icon{
+    color: #111;
+    font-size: 14px !important;
+    margin: 5px;
+    display: none;
+    cursor: pointer;
+}
+.not-box .cog-icon{
+    display: none;
+}
+.username-icon{
+    color: #111;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.username-name{
+    font-size: 12px;
+    font-family: Raleway-Bold;
+    margin-left: 5px;
+}
+.username-title{
+    font-size: 10px;
+    color: #579af4;
+}
+.notification{
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 14px;
+}
+.area-one{
+    position: relative;
+    width: 90%;
+    justify-content: center;
+}
+.area-one-box{
+    padding: 10px 0;
+}
+.right-align{
+    text-align: right;
+}
+.ao-title{
+    color: #111;
+    font-family: Raleway-Bold;
+    font-size: 20px;
+    margin: 5px 0;
+}
+.ao-subtitle{
+    color: #666;
+    font-size: 14px;
+}
+.area-two{
+    position: relative;
+    width: 90%;
+    padding: 10px 0;
+    margin: 5px auto;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+}
+.area-two-menu{
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.a-2-m{
+    justify-content: flex-start;
+    align-content: center;
+}
+.area-two-menu a{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #222;
+    font-family: Raleway-Bold;
+}
+.area-two-menu .active-home-link{
+    color: #579af4;
+}
+.area-two-overview{
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(87, 154, 244, 0.5), rgba(29, 96, 188, 0.7));
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.area-two-overview-col{
+    color: white;
+    width: 45%;
+    margin-left: 0px;
+    margin: 10px 0;
+}
+.atoc-title{
+    color: white;
+    font-size: 12px;
+    font-family: Raleway-Bold;
+    margin: 5px 0;
+}
+.atoc-number{
+    color: white;
+    font-size: 16px;
+    font-family: Raleway-Bold;
+    margin: 5px 0;
+}
+.invoice-menu{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.im-link{
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 165, 0, 0.6), rgba(255, 165, 0, 0.9));
+    margin-right: 0px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Raleway-Bold;
+    border-radius: 3px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.invoice-menu a i{
+    color: white;
+    font-size: 16px;
+    margin: 10px 5px;
+}
+.iml-2{
+    background-image: linear-gradient(to bottom, rgba(87, 154, 244, 0.8), rgba(29, 96, 188, 0.9));
+}
+.invoice-table{
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 2px;
+}
+.pcc-invoice-table{
+    width: 100%;
+}
+.invoice-table table{
+    width: 300% !important;
+    position: relative;
+    border-collapse: collapse;
+    height: auto;
+}
+#invoice_tab_wrapper{
+    width: 300% !important;
+    position: relative;
+    overflow-x: hidden;
+}
+.total-row{
+    background-color: transparent;
+}
+.total-col{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: Raleway-Bold;
+}
+.tc-col{
+    background-color: #080824;
+    color: white;
+    border: 1px solid white;
+    font-family: Raleway-Bold;
+}
+
+.action-container{
+    width: 90%;
+    margin: 10px auto;
+    padding-bottom: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+.action-container a{
+    margin-left: 0;
+    width: 100%;
+    font-size: 13px;
+    font-family: Raleway-Bold;
+}
+.product-container{
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+}
+.pro-con-col{
+    height: auto;
+    width: 100%;
+}
+.pcc{
+    padding: 10px 0;
+    width: 100%;
+}
+.product-code{
+    font-family: Raleway-Bold;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #080824;
+}
+.product-desc{
+    font-family: Raleway-Bold;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #080824;
+}
+.product-price{
+    font-family: Raleway-Bold;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #080824;
+}
+.danger{
+    width: 90%;
+}
+.success{
+    width: 90%;
+}
+
+.supplier_details_container{
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.supplier_details_container .title{
+    font-family: Raleway-Bold;
+    margin: 10px 0;
+    color: black;
+}
+
+.supplier_details_container .form-container{
+    width: 100%;
+    position: relative;
+}
+.supplier_details_container .form-container form{
+    width: 100%;
+    flex-direction: column;
+}
+.supplier_details_container .form-container form .form-group{
+    width: 100%;
+    position: relative;
+    margin: 10px auto;
+}
+.supplier_details_container .form-container form .form-group span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.supplier_details_container .form-container form .form-group-btn{
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+    margin-bottom: 0;
+    flex-direction: column-reverse;
+}
+.supplier-input-form, .supplier-select-form, .supplier-btn-form{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+.supplier_details_container .form-container form .form-group select{
+    appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+}
+.supplier_details_container .form-container form .form-group-btn .fgb-red{
+    background-color: #ff5842;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: Raleway-Bold;
+}
+.print-container{
+    width: 90%;
+    margin: 10px auto;
+}
+.print-container a{
+    padding: 10px;
+    background-color: #579af4;
+    color: white;
+    font-size: 14px;
+    font-family: Raleway-Bold;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.print-container a:hover{
+    background-color: #080824;
+    transition: all 0.5s ease-in-out;
+}
+.gen-invoice-container{
+    width: 90%;
+    padding: 50px 10px;
+}
+.gen-invoice-container-header{
+    width: 100%;
+    position: relative;
+}
+.gich-col .coy-name{
+    font-family: Raleway-Bold;
+    font-size: 12px;
+}
+.gich-col .coy-address, .coy-email, .coy-tel{
+    color: black;
+    margin: 8px 0;
+    font-size: 10px;
+}
+.gich-col .biller{
+    color: black;
+    font-size: 10px;
+}
+.gich-col .inv-coy-name{
+    color: black;
+    margin-top: 10px;
+    font-size: 10px;
+    font-family: Raleway-Bold;
+}
+.gich-col .branch{
+    color: black;
+    margin-top: 2px;
+    font-size: 10px;
+    font-family: Raleway-Bold;
+}
+.gich-col-2{
+    text-align: right;
+}
+.gich-col-2 .inv-date{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+.gich-col-2 .sales-inv-no{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+.gich-col-2 .sales-inv-no span{
+    font-family: Raleway-Bold;
+    color: black;
+}
+.gen-invoice-table{
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+.gen-invoice-table table{
+    width: 200%;
+    position: relative;
+    border-collapse: collapse;
+}
+.gen-invoice-table table tr{
+    width: 100%;
+}
+.gen-invoice-table table tr:first-child td{
+    font-family: Raleway-Bold;
+    font-size: 10px;
+}
+.gen-invoice-table table tr td{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: black;
+    font-size: 10px;
+}
+.gich-col-new{
+    position: relative;
+}
+.gich-col-flex{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.gicf-col{
+    position: relative;
+    margin-left: 20px
+}
+.gicf-sub-total{
+    font-family: Raleway-Bold;
+    font-size: 10px;
+    color: black;
+    margin: 10px 0;
+    text-align: right;
+}
+.gicf-sub-figure{
+    font-size: 10px;
+    color: black;
+    margin: 10px 0;
+}
+.gicf-sub-figure-last{
+    font-size: 11px;
+    font-family: Raleway-Bold;
+    color: black;
+    margin: 5px 0;
+}
+
+#invoice_tab{
+width: 100% !important;    
+}
+
+.dataTables_wrapper{
+    position: relative;
+    width: 100%;
+}
+.dataTable{
+    position: relative;
+    width: 100% !important;
+}
+    
+.dataTables_wrapper .dataTables_length,.dataTables_wrapper .dataTables_filter{
+float: none;
+text-align: left;
+clear: both;
+
+}
+.dataTables_wrapper .dataTables_filter{
+margin-top: 10px;
+width: 100%;
+position: relative;
+}
+
+.dataTables_wrapper .dataTables_info,.dataTables_wrapper .dataTables_paginate{
+float: none;
+text-align: left;
+width: 100%;
+padding-left: 10px;
+padding-right: 10px;
+position: relative;
+}
+.dataTables_wrapper .dataTables_paginate{
+margin: 20px auto;
+width: 100%;
+display: block;
+height: auto;
+text-align: right;
+position: relative;
+}
+    
+.product-wrapper{
+    width: 90%;
+    position: relative;
+    padding: 20px;
+}
+.product-form-wrapper{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-form-wrapper .form-group{
+    width: 100%;
+    position: relative;
+    margin: 10px auto;
+}
+.product-form-wrapper .form-group-btn{
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+}
+.product-form-wrapper .form-group-btn button{
+    display: block;
+    width: 100%;
+}
+
+    
+.edit-product-form-wrapper{
+    width: 100%;
+    position: relative;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+.edit-product-form-wrapper .form-group{
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+}
+.edit-product-form-wrapper .form-group form{
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+}    
+.edit-product-form-wrapper .form-group form input, .edit-product-form-wrapper .form-group form select{
+    display: block;
+    width: 80%;
+    position: relative;
+}  
+ .edit-product-form-wrapper .form-group form input:disabled, .edit-product-form-wrapper .form-group form select:disabled{
+    background-color: rgba(0, 0, 0, 0.02);
+} 
+.edit-product-form-wrapper .form-group form button{
+    display: block;
+    width: 20%;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 14px;
+}
+.edit-product-form-wrapper .form-group form button:disabled{
+    background-color: rgba(0, 0, 0, 0.2);
+}   
+    
+
+.login-container{
+    width: 100%;
+    height: 100%;
+}
+.login-container-wrapper{
+    width: 100%;
+    padding: 100px 20px;
+    text-align: center;
+}
+.login-title{
+    color: white;
+    margin: 20px auto;
+    font-size: 20px;
+}
+.login-form-container{
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    padding: 20px 10px;
+}
+.login-form-container .form-group{
+    width: 85%;
+    height: 40px;
+    position: relative;
+    margin: 25px auto;
+}
+        
+    
+}

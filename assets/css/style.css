@@ -1,0 +1,1122 @@
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: Raleway-Bold;
+    src: url(fonts/Raleway/Raleway-Bold.ttf);
+}
+@font-face{
+    font-family: Raleway-Regular;
+    src: url(fonts/Raleway/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family: PlayfairDisplay-Regular;
+    src: url(fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+@font-face{
+    font-family: Ballerick;
+    src: url(fonts/Ballerick/Ballerick.otf);
+}
+*{
+    font-family: Raleway-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: #424e5a;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*
+:root{
+    --bg-color: #EE3C26;
+    --color: #fffaea;
+    --active-color: #fade83;
+}
+*/
+
+*::-webkit-scrollbar{
+    width: 5px;
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all .5s ease-in-out;
+}
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    transition: all .5s ease-in-out;
+}
+.whole-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container-flex-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.col{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.container-flex-box .menu{
+    width: 15%;
+    background-color: #080824;
+}
+.container-flex-box .overview{
+    width: 85%;
+    background-color: #fcfcfc; 
+    overflow-y: auto;
+}
+.logo-container{
+    width: 100%;
+    position: relative;
+    padding: 20px 10px;
+    color: white;
+    font-family: Raleway-Bold;
+    font-size: 20px;
+    background-color: #04043b;
+}
+.blue-color{
+    color: #1d60bc;
+    font-family: Raleway-Bold;
+}
+.menu-container{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+.menu-container ul li{
+    margin: 15px 0;
+}
+.menu-container a{
+    color: white;
+    font-family: Raleway-Bold;
+    font-size: 14px;
+}
+.menu-container .a-active{
+    color: #579af4;
+}
+.menu-container i{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-right: 10px;
+    width: 20px;
+}
+.overview-header{
+    position: fixed;
+    width: 85%;
+    height: 70px;
+    padding: 0px 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 1;
+}
+.ovh-col{
+    width: 49%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.ovh-col-1{
+    justify-content: flex-start;
+}
+.ovh-col-2{
+    justify-content: flex-end;
+}
+.not-box{
+    margin-right: 20px;
+}
+.not-box .menu-display-icon{
+    color: #111;
+    font-size: 24px;
+    margin-right: 10px;
+    display: none;
+}
+.logo-container .menu-close-icon{
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: none;
+}
+.username-icon{
+    color: #111;
+    font-size: 24px;
+    margin-right: 5px;
+}
+.username-name{
+    font-size: 14px;
+    font-family: Raleway-Bold;
+    margin-left: 5px;
+}
+.username-title{
+    font-size: 13px;
+    color: #579af4;
+}
+.notification{
+    background-color: #579af4;
+    padding: 1px 5px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    color: white;
+    font-size: 10px;
+}
+.area-one{
+    position: relative;
+    width: 97%;
+    padding: 10px 0;
+    padding-top: 80px;
+    margin: 10px auto;
+    height: auto;
+}
+.pad-20{
+    padding-top: 20px;
+}
+.area-one-box{
+    padding: 10px 0;
+}
+.right-align{
+    text-align: right;
+    padding: 10px;
+}
+.ao-title{
+    color: #111;
+    font-family: Raleway-Bold;
+    font-size: 20px;
+    margin: 5px 0;
+}
+.ao-subtitle{
+    color: #666;
+    font-size: 14px;
+}
+.area-two{
+    position: relative;
+    width: 97%;
+    padding: 10px 0;
+    margin: 10px auto;
+    height: auto;
+}
+.area-two-menu{
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.area-two-menu a{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #222;
+    font-family: Raleway-Bold;
+}
+.area-two-menu .active-home-link{
+    color: #579af4;
+}
+.area-two-overview{
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(87, 154, 244, 0.5), rgba(29, 96, 188, 0.7));
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.area-two .at-customers{
+    background-image: linear-gradient(to bottom, rgba(244, 87, 87, 0.5), rgba(188, 29, 29, 0.7));
+}
+.area-two .at-products{
+    background-image: linear-gradient(to bottom, rgba(172, 87, 244, 0.5), rgba(157, 29, 188, 0.7));
+}
+.area-two-overview-col{
+    color: white;
+    width: 22%;
+    margin-left: 20px;
+}
+.atoc-title{
+    color: white;
+    font-size: 14px;
+    font-family: Raleway-Bold;
+    margin: 5px 0;
+}
+.atoc-number{
+    color: white;
+    font-size: 30px;
+    font-family: Raleway-Bold;
+    margin: 5px 0;
+}
+.invoice-menu{
+    width: 97%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+.im-link{
+    display: block;
+    position: relative;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 165, 0, 0.6), rgba(255, 165, 0, 0.9));
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Raleway-Bold;
+    border-radius: 3px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.invoice-menu a i{
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.iml-2{
+    background-image: linear-gradient(to bottom, rgba(87, 154, 244, 0.8), rgba(29, 96, 188, 0.9));
+}
+.invoice-table{
+    width: 97%;
+    position: relative;
+    margin: 20px auto;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow-x: auto;
+}
+.invoice-table::-webkit-scrollbar{
+    display: none;
+}
+.invoice-table table{
+    width: 100% !important;
+    position: relative;
+    border-collapse: collapse;
+    height: auto;
+}
+#invoice_tab{
+    width: 100% !important;
+    position: relative;
+}
+#invoice_tab_wrapper::-webkit-scrollbar{
+    display: none;
+}
+.invoice-table table tr{
+    width: 100%;
+    position: relative;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.invoice-table table tr td{
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.invoice-table table thead tr td{
+    font-family: Raleway-Bold;
+    background-color: #080824;
+    color: white;
+    table-layout: fixed;
+}
+.invoice-table table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+.invoice-table table tr:nth-child(even){
+    background-color: rgb(87, 154, 244, 0.03);
+}
+.action-edit{
+    color: #579af4;
+    margin-right: 5px;
+}
+.action-trash{
+    color: #ff7b7b;
+    margin-right: 5px;
+}
+.action-print{
+    color: rgba(19, 19, 54, 0.8);
+    margin-right: 5px;
+}
+.pagination{
+    width: 97%;
+    display: flex;
+    margin: 10px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.pagination a{
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+.pagination .active{
+    background-color: #579af4;
+    color: white;
+    border: 1px solid #579af4;
+}
+
+.search-container{
+    width: 97%;
+    margin: 20px auto;
+    position: relative;
+}
+.search-container form{
+    width: 100%;
+    position: relative;
+}
+.search-container .form-group{
+    width: 300px;
+    position: relative;
+}
+.search-container .form-group input{
+    width: 100%;
+    padding: 6px 10px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.search-container .form-group button{
+    padding: 6px;
+    width: 30px;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #080824;
+}
+.total-row{
+    background-color: transparent;
+}
+.total-col{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: Raleway-Bold;
+}
+.tc-col{
+    background-color: #080824;
+    color: white;
+    border: 1px solid white;
+    font-family: Raleway-Bold;
+}
+.action-container{
+    width: 97%;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.action-container a{
+    margin-left: 5px;
+    font-size: 14px;
+    width: 30%;
+    padding: 15px;
+    font-family: Raleway-Bold;
+    text-align: center;
+}
+.empty-list{
+    background-image: linear-gradient(to bottom, rgba(255, 145, 145, 0.7), rgba(255, 145, 145, 0.9));
+    border-radius: 2px;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 6px 10px;
+    margin-top: 10px;
+}
+.add-more-items{
+    background-image: linear-gradient(to bottom, rgba(6, 63, 129, 0.7), rgba(6, 63, 129, 0.9));
+    border-radius: 2px;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 6px 10px;
+    margin-top: 10px;
+}
+.generate-invoice{
+    background-image: linear-gradient(to bottom, rgba(24, 92, 65, 0.7), rgba(24, 92, 65, 0.9));
+    border-radius: 2px;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 6px 10px;
+    margin-top: 10px;
+}
+
+.product-container{
+    width: 97%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    position: relative;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.pro-con-col{
+    height: 100%;
+    width: 100%;
+}
+.pcc{
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+.product-code{
+    font-family: Raleway-Bold;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #080824;
+}
+.product-desc{
+    font-family: Raleway-Bold;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #080824;
+}
+.product-price{
+    font-family: Raleway-Bold;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #080824;
+}
+.pcc .form-container{
+    width: 100%;
+    position: relative;
+}
+.pcc .form-container .form-group{
+    width: 100%;
+    position: relative;
+}
+.pcc .form-container .form-group input{
+    width: 200px;
+    position: relative;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.pcc .form-container .form-group select{
+    width: 200px;
+    position: relative;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: white;
+}
+.pcc .form-container .form-group button{
+    width: 200px;
+    position: relative;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffbe2d;
+    color: black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-family: Raleway-Bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.danger{
+    width: 97%;
+    margin: 10px auto;
+    background-color: #ff8e8e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.success{
+    width: 97%;
+    margin: 10px auto;
+    background-color: #74a780;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.supplier_details_container{
+    width: 97%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.supplier_details_container .title{
+    font-family: Raleway-Bold;
+    margin: 10px 0;
+    color: black;
+}
+
+.supplier_details_container .form-container{
+    width: 100%;
+    position: relative;
+}
+.supplier_details_container .form-container form{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.supplier_details_container .form-container form .form-group{
+    width: 33%;
+    position: relative;
+}
+.supplier_details_container .form-container form .form-group span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.supplier_details_container .form-container form .form-group-btn{
+    width: 48%;
+    position: relative;
+    margin: 20px 0;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.supplier-input-form, .supplier-select-form, .supplier-btn-form{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    display: block;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.supplier_details_container .form-container form .form-group select{
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.supplier_details_container .form-container form .form-group select:hover ~ span{
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+}
+.supplier_details_container .form-container form .form-group-btn button{
+    background-color: #6da76d;
+    color: white;
+    font-size: 16px;
+    font-family: Raleway-Bold;
+    cursor: pointer;
+}
+.supplier_details_container .form-container form .form-group-btn .fgb-red{
+    background-color: #ff5842;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: Raleway-Bold;
+}
+.supplier_details_container .form-container form .form-group-btn button:hover{
+    background-color: #579af4;
+     transition: all 0.5s ease-in-out;
+}
+.print-container{
+    width: 97%;
+    margin: 10px auto;
+}
+.print-container a{
+    padding: 10px;
+    background-color: #579af4;
+    color: white;
+    font-size: 14px;
+    font-family: Raleway-Bold;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.print-container a:hover{
+    background-color: #080824;
+    transition: all 0.5s ease-in-out;
+}
+.gen-invoice-container{
+    width: 97%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 50px 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    height: auto;
+    position: relative;
+}
+.gen-invoice-container-header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.gich-col{
+    position: relative;
+    width: 50%;
+}
+.gich-col .coy-name{
+    font-family: Raleway-Bold;
+    color: black;
+    margin: 0px 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.gich-col .coy-address, .coy-email, .coy-tel{
+    color: black;
+    margin: 8px 0;
+    font-size: 13px;
+}
+.gich-col .biller{
+    color: black;
+    margin: 10px 0;
+    font-size: 15px;
+    font-family: Raleway-Bold;
+}
+.gich-col .inv-coy-name{
+    color: black;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Raleway-Bold;
+}
+.gich-col .branch{
+    color: black;
+    margin-top: 2px;
+    font-size: 15px;
+    font-family: Raleway-Bold;
+}
+.gich-col-2{
+    text-align: right;
+}
+.gich-col-2 .inv-date{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.gich-col-2 .sales-inv-no{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.gich-col-2 .sales-inv-no span{
+    font-family: Raleway-Bold;
+    color: black;
+}
+.gen-invoice-table{
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+}
+.gen-invoice-table table{
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+}
+.gen-invoice-table table tr{
+    width: 100%;
+}
+.gen-invoice-table table tr:first-child td{
+    font-family: Raleway-Bold;
+    font-size: 12px;
+}
+.gen-invoice-table table tr td{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: black;
+    font-size: 12px;
+}
+.gich-col-new{
+    position: relative;
+}
+.gich-col-flex{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.gicf-col{
+    position: relative;
+    margin-left: 20px
+}
+.gicf-sub-total{
+    font-family: Raleway-Bold;
+    font-size: 14px;
+    color: black;
+    margin: 10px 0;
+    text-align: right;
+}
+.gicf-sub-figure{
+    font-size: 14px;
+    color: black;
+    margin: 10px 0;
+}
+.gicf-sub-figure-last{
+    font-size: 16px;
+    font-family: Raleway-Bold;
+    color: black;
+    margin: 5px 0;
+}
+
+
+
+.product-wrapper{
+    width: 97%;
+    position: relative;
+    margin: 30px auto;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.product-wrapper .form-container{
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.product-wrapper .form-container form{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+.product-form-wrapper{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.product-form-wrapper .form-group{
+    width: 48%;
+    position: relative;
+    margin: 15px 0;
+    margin-right: 10px;
+}
+.product-form-wrapper .form-group label{
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+    font-family: Raleway-Bold;
+    color: #333;
+    font-size: 14px;
+}
+.product-form-wrapper .form-group label .label-span{
+    color: #f03e3e;
+    font-size: 12px;
+    font-family: Raleway-Bold;
+}
+.product-form-wrapper .form-group input, .product-form-wrapper .form-group select{
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: white;
+    font-family: Raleway-Regular;
+}
+.product-form-wrapper .form-group input:focus{
+    border: 1px solid #579af4;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.01);
+    transition: all 0.5s ease-in-out;
+}
+.product-form-wrapper .form-group-btn{
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+}
+.product-form-wrapper .form-group-btn button{
+    display: block;
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: #579af4;
+    color: white;
+    font-family: Raleway-Bold;
+}
+.product-form-wrapper .form-group-btn button:hover{
+    background-color: #080824;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.product-wrapper .edit-form-container{
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.edit-product-form-wrapper{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.edit-product-form-wrapper .form-group{
+    width: 48%;
+    position: relative;
+    margin: 15px 0;
+    margin-right: 10px;
+}
+.edit-product-form-wrapper .form-group form{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.edit-product-form-wrapper .form-group form label{
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+    font-family: Raleway-Bold;
+    color: #333;
+    font-size: 14px;
+}
+.edit-product-form-wrapper .form-group form label .label-span{
+    color: #f03e3e;
+    font-size: 12px;
+    font-family: Raleway-Bold;
+}
+.edit-product-form-wrapper .form-group form input, .edit-product-form-wrapper .form-group form select{
+    display: block;
+    width: 90%;
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: white;
+    font-family: Raleway-Regular;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.edit-product-form-wrapper .form-group input:focus{
+    border: 1px solid #579af4;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.01);
+    transition: all 0.5s ease-in-out;
+}
+.edit-product-form-wrapper .form-group form input:disabled, .edit-product-form-wrapper .form-group form select:disabled{
+    background-color: rgba(0, 0, 0, 0.02);
+}
+.edit-product-form-wrapper .form-group form button{
+    display: block;
+    width: 10%;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: #579af4;
+    color: white;
+}
+.edit-product-form-wrapper .form-group form button:hover{
+    background-color: #080824;
+    transition: all 0.5s ease-in-out;
+}
+.edit-product-form-wrapper .form-group form button:disabled{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.login-container{
+    width: 100%;
+    height: 100%;
+    background-color: #080824;
+    position: relative;
+    text-align: center;
+    overflow-y: auto;
+}
+.login-container-wrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 100px 50px;
+    text-align: center;
+}
+.login-title{
+    color: white;
+    margin: 20px auto;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Raleway-Bold;
+}
+.login-title .logo-span{
+    color: #579af4;
+}
+.login-form-container{
+    width: 35%;
+    min-height: 200px;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border-radius: 3px;
+    position: relative;
+}
+.login-form-container form{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.login-form-container .form-group{
+    width: 80%;
+    height: 40px;
+    position: relative;
+    margin: 25px auto;
+}
+.login-form-container .form-group input{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    color: white;
+    background-color: rgba(5, 3, 20, 0.8);
+    border: none;
+    padding-left: 20px;
+}
+.login-form-container .form-group input::placeholder{
+    color: rgba(255, 255, 255, 0.3);
+}
+.login-form-container .form-group .input-form:focus{
+    text-decoration: underline;
+}
+.login-form-container .form-group input:focus::placeholder{
+    text-decoration: none;
+}
+.login-form-container .form-group .icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #050314;
+    color: rgba(255, 255, 255, 0.3);
+    padding: 13px 10px;
+    width: 40px;
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.login-form-container .form-group .icons:hover{
+    background-color: #579af4;
+    color: #080824;
+    transition: all 0.5s ease-in-out;
+}
+.login-form-container .form-group input:focus ~ .icons{
+    background-color: #579af4;
+    color: #080824;
+    transition: all 0.5s ease-in-out;
+}
+.login-form-container .form-group button{
+    width: 150px;
+    position: relative;
+    background-color: rgba(5, 3, 20, 0.7);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #579af4;
+    color: #050314;
+    font-size: 12px;
+    font-family: Raleway-Bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.login-form-container .form-btn{
+    text-align: left;
+    margin-top: 30px;
+}
+.login-form-container .form-group button:hover{
+    background-color: #080824;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.err-message{
+    width: 100%;
+    color: #ffcbcb;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 14px;
+}
